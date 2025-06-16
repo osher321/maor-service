@@ -180,7 +180,6 @@
 .high-contrast #tab1 strong {
   background-color: #000 !important;
   color: #fff !important;
-  outline: 3px solid #00ffff;  /* קו תכלת */
 }
 
 .high-contrast #tab1 a {
