@@ -1,0 +1,334 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מ.כ שירותי אינסטלציה ומיזוג אוויר </title> <!-- שורת כותרת תקנית וברורה ל-SEO -->
+
+    <!-- תיאור עמוד שמופיע בגוגל -->
+    <meta name="description"
+        content="מ.כ שירותי אינסטלציה ומיזוג אוויר – תיקון נזילות, התקנת מזגנים, שירות מקצועי ואמין באזור המרכז והשפלה.">
+
+    <!-- מילות מפתח לעמוד (למרות שגוגל פחות משתמש בזה, זה לא מזיק) -->
+    <meta name="keywords"
+        content="אינסטלטור, תיקון נזילות, התקנת מזגן, פתיחת סתימות, טכנאי מזגנים, חולון, ראשון לציון, מיזוג אוויר, שירותי אינסטלציה">
+
+    <!-- קישורים לקובצי עיצוב -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="נגישות.css">
+
+    <!-- קובצי JavaScript -->
+    <script src="script.js"></script>
+    <script src="נגישות.js" defer></script>
+
+    <!-- חיבור לפונט מגוגל -->
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700&display=swap" rel="stylesheet">
+
+    <!-- favicon לאתר (הסמל הקטן בכרטיסיית הדפדפן) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- מבנה נתונים מובנה ל-Google (Schema.org) -->
+    <!-- מבנה נתונים מובנה ל-Google (Schema.org) -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+
+  "name": "מ.כ שירותי אינסטלציה ומיזוג אוויר", // ← שם העסק
+
+  "image": "https://osher123.github.io/mak-plumbing/logo-mak.png", // ← כתובת של הלוגו באתר שלך
+
+  "telephone": "050-2077723", // ← מספר טלפון ראשי
+
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "חולון", // ← עיר השירות
+    "addressCountry": "IL" // ← ישראל
+  },
+
+  "areaServed": "מרכז ושפלה", // ← אזור השירות
+
+  "url": "https://osher123.github.io/mak-plumbing/" // ← כתובת האתר בפועל
+}
+</script>
+
+
+</head>
+
+<body>
+    <button id="accessibility-btn" aria-label="Toggle Accessibility Menu">♿</button>
+
+    <!-- אזור תפריט הנגישות -->
+    <section id="accessibility-menu" aria-label="כלי נגישות" dir="rtl">
+        <div id="accessibility-panel" class="hidden" role="region">
+            <ul>
+                <li><button onclick="adjustTextSize('increase')">הגדל טקסט</button></li>
+                <li><button onclick="adjustTextSize('decrease')">הקטן טקסט</button></li>
+                <li><button onclick="toggleHighContrast()">ניגודיות גבוהה</button></li>
+                <li><button onclick="highlightLinks()">הדגש קישורים</button></li>
+                <li><button onclick="toggleReadableFont()">גופן קריא</button></li>
+                <li><button onclick="resetAccessibility()">איפוס כל ההגדרות</button></li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <!-- לוגו -->
+            <img src=" logo-mak.png" alt=" לוגו מ כ" class="logo-navbar">
+
+            <!-- כפתור המבורגר -->
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+            <!-- קישורים -->
+            <div class="nav-links" id="navLinks">
+                <a href="#why">למה לבחור בנו</a>
+                <a href="#services">השירותים שלנו</a>
+                <a href="#gallery">גלריה</a>
+                <a href="#more">מידע נוסף</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- כותרת עליונה עם לוגו -->
+    <header>
+        <h1>מ,כ- שרותי אינסטלציה ומיזוג</h1>
+        <h1>050-2077723</h1>
+        <a class="whatsapp-btn"
+            href="https://wa.me/972502077723?text=שלום%20מאור,%20ראיתי%20את%20האתר%20שלך%20ואני%20מעוניין%20בשירותיך"
+            target="_blank">
+            דברו איתי בוואטסאפ
+        </a>
+
+    </header>
+
+    <!-- תוכן ראשי של הדף -->
+    <section class="services" id="why">
+        <div class="box-content">
+            <div class="text">
+                <h2>למה לבחור בנו?</h2>
+                <ul>
+                    <li>ניסיון של 25 שנים כולל תעודת קבלן רשום</li>
+                    <li>שירות מהיר ואמין</li>
+                    <li>שימוש בכלים מתקדמים לתוצאה מדויקת, מהירה ובטוחה</li>
+                    <li>מחירים הוגנים ואחריות מלאה</li>
+                    <li>זמינות גם במקרי חירום</li>
+                </ul>
+            </div>
+            <div class="image">
+                <img src="איש מקצוע עם קאטר ללא רקע.png" alt="למה לבחור בנו" />
+            </div>
+        </div>
+
+    </section>
+    <!-- גלריית תמונות -->
+    <section id="gallery">
+        <di class="image-gallery">
+            <img src="מצלמת ביוב .png" alt=" אדם מחזיק מצלמה מקצועית לצילום ביוב">
+            <img src="מאתר נזילות.png" alt=" אדם מאתר נזילות עם מכשיר מקצועי">
+            </div>
+    </section>
+
+
+    <!-- קופסה: השירותים שלנו -->
+    <section class="services" id="services">
+        <h2>השירותים שלנו</h2>
+
+        <h4>אינסטלציה:</h4>
+        <ul>
+            <li>תיקון נזילות</li>
+            <li>החלפת צנרת</li>
+            <li>פתיחת סתימות</li>
+        </ul>
+        <h4>מיזוג אוויר:</h4>
+        <ul>
+            <li>התקנת מזגנים מכל הסוגים</li>
+            <li>תיקון תקלות</li>
+            <li>מילוי גז וניקוי פילטרים</li>
+        </ul>
+    </section>
+
+    <!-- גלריית תמונות -->
+    <section class="image-gallery">
+        <img src="אדם מתקן נזילה .png" alt=" אדם מתקן נזילה בכיור">
+        <img src="אדם ליד מזגן.png" alt="אדם התקין מזגן">
+
+    </section>
+
+    <!-- טאבים נוספים -->
+    <section class="tabs" id="more">
+        <h3>מידע נוסף</h3>
+        <div class="tab-buttons">
+            <button onclick="showTab('tab1')">אודות</button>
+            <button onclick="showTab('tab2')">לקוחות ממליצים</button>
+            <button onclick="showTab('tab3')">שאלות נפוצות</button>
+        </div>
+        <div class="tab-content">
+            <div id="tab1" class="tab active">
+                <img src="איש מקצוע עם קאטר ללא רקע.png" alt="אודות מאור"
+                    style="width: 60px; height: auto; margin-bottom: 1em;">
+                <p><strong>מאור – אינסטלציה ומיזוג</strong> הוא לא עוד טכנאי, אלא שותף לראש שקט בבית שלכם.</p>
+                <p>עם ניסיון של למעלה מ־25 שנה, מאות לקוחות מרוצים והסמכה כקבלן רשום – אנחנו מביאים איתנו לא רק ידע,
+                    אלא גם יחס אנושי, שקיפות מלאה והבנה אמיתית של הצרכים שלכם.</p>
+                <p>כל קריאה מתקבלת אצלנו ברצינות. אנחנו מגיעים בזמן, מסבירים כל שלב בעבודה, ולא עוזבים עד שאתם
+                    מרוצים ב־100%.</p>
+                <p>הלקוחות שלנו מספרים שהם בוחרים בנו שוב ושוב – לא רק בזכות המקצועיות, אלא בזכות האמינות, ההוגנות
+                    והלב שאנחנו מביאים לכל תיקון והתקנה.</p>
+                <p><strong>אם אתם מחפשים איש מקצוע שאפשר לסמוך עליו – תנו לנו להוכיח לכם למה מאור הוא הבחירה
+                        הנכונה.</strong></p>
+            </div>
+
+            <div id="tab2" class="tab">
+                <div class="testimonial">
+                    <p class="name">אושר מחולון</p>
+                    <p class="feedback">מאור איש מקצוע אמין ובעל ידי זהב – מצליח לפתור כל תקלה!</p>
+                    <span class="stars">★★★★★</span>
+                </div>
+                <div class="testimonial">
+                    <p class="name">אליקו מחולון</p>
+                    <p class="feedback">אלוף אמיתי! פתר לי בעיה שאף אחד אחר לא הצליח. ממליץ מאוד!</p>
+                    <span class="stars">★★★★★</span>
+                </div>
+                <div class="testimonial">
+                    <p class="name">יפה מחולון</p>
+                    <p class="feedback">שירות עם חיוך, דייקנות וניקיון. אין דברים כאלה!</p>
+                    <span class="stars">★★★★★</span>
+                </div>
+                <div class="testimonial">
+                    <p class="name">דוד מראשון לציון</p>
+                    <p class="feedback">הגיע בזמן, פתר הכל במהירות – מקצוען אמיתי!</p>
+                    <span class="stars">★★★★★</span>
+                </div>
+            </div>
+
+            <div id="tab3" class="tab">
+
+                <h4>שאלות כלליות</h4>
+
+                <details>
+                    <summary><strong>האם יש אחריות?</strong></summary>
+                    <p>כן, אחריות מלאה על כל עבודה.</p>
+                </details>
+
+                <details>
+                    <summary><strong>כמה זמן לוקח התיקון?</strong></summary>
+                    <p>בד"כ באותו יום.</p>
+                </details>
+
+                <details>
+                    <summary><strong>האם אתם נותנים שירות גם לעסקים ומשרדים?</strong></summary>
+                    <p>כן, אנו מספקים שירות מקצועי גם ללקוחות עסקיים – כולל משרדים, חנויות, מסעדות ועוד.</p>
+                </details>
+
+                <details>
+                    <summary><strong>תוך כמה זמן אתם יכולים להגיע מרגע הקריאה?</strong></summary>
+                    <p>בדרך כלל נוכל להגיע תוך כמה שעות מרגע הפנייה – תלוי במיקום ובדחיפות התקלה.</p>
+                </details>
+
+                <details>
+                    <summary><strong>האם אפשר לשלם באשראי?</strong></summary>
+                    <p>כן, אנו מקבלים תשלום גם במזומן וגם באשראי, ביט או העברה בנקאית.</p>
+                </details>
+
+                <h4 style="margin-top:2em;">שאלות על אינסטלציה</h4>
+
+                <details>
+                    <summary><strong>האם אתם מבצעים פתיחת סתימות דחופה?</strong></summary>
+                    <p>כן, אנו זמינים גם למקרים דחופים של סתימות בכיורים, שירותים ומקלחות.</p>
+                </details>
+
+                <details>
+                    <summary><strong>האם אתם מתקינים נקודות מים חדשות?</strong></summary>
+                    <p>בוודאי. אנו מבצעים פתיחת נקודות מים לפי תכנון הלקוח או לצרכים מיוחדים.</p>
+                </details>
+
+                <details>
+                    <summary><strong>מה עושים במקרה של פיצוץ בצנרת?</strong></summary>
+                    <p>יש לסגור את ברז המים הראשי ולהתקשר אלינו מיד – נגיע במהירות עם פתרון מקצועי ומדויק.</p>
+                </details>
+                <h4 style="margin-top:2em;">שאלות על מיזוג אוויר</h4>
+
+                <details>
+                    <summary><strong>מה חשוב לדעת לפני התקנת מזגן חדש?</strong></summary>
+                    <p>כדאי לבדוק את גודל החדר, הבידוד, סוג החשמל ולוודא שהמזגן מתאים לצרכים שלכם – אנחנו נסייע לכם
+                        בבחירה.</p>
+                </details>
+
+                <details>
+                    <summary><strong>האם אתם מתקינים גם מזגנים מיני מרכזיים?</strong></summary>
+                    <p>בהחלט. אנו מתקינים כל סוגי המזגנים כולל מיני מרכזי ו-VRF.</p>
+                </details>
+
+            </div>
+        </div>
+    </section>
+    </main>
+
+
+    <div class="services">
+        <h3>אזורי שירות</h3>
+        <h3>אנחנו מגיעים לאיזור המרכז והשפלה :</h3>
+        <ul style="columns: 2; max-width: 600px; margin: auto; line-height: 1.8;">
+            <li>חולון</li>
+            <li>בת ים</li>
+            <li>תל אביב</li>
+            <li>יבנה</li>
+            <li>ראשון לציון</li>
+            <li>רחובות</li>
+            <li>רמלה</li>
+            <li>פתח תקווה</li>
+            <li>גבעתיים</li>
+            <li>רמת גן</li>
+            <li>נס ציונה</li>
+            <li>והסביבה</li>
+        </ul>
+        <p>אם אתם לא בטוחים אם אנחנו מגיעים לאיזורכם אל תהססו שלחו הודעה 050-2077723</p>
+
+
+    </div>
+
+    </section>
+
+    <div style="text-align: center; margin: 2em 0;">
+        <a class="whatsapp-btn"
+            href="https://wa.me/972502077723?text=שלום%20מאור,%20ראיתי%20את%20האתר%20שלך%20ואני%20מעוניין%20בשירותיך"
+            target="_blank">
+            דברו איתי בוואטסאפ
+        </a>
+
+    </div>
+
+
+
+    <!-- תחתית הדף -->
+    <footer>
+        <!--<p><a href="https://g.page/r/XXXXXXXXX" target="_blank">צפו בנו בגוגל</a></p>-->
+        <p>
+            <a href="tel:0502077723" style="color: white; text-decoration: underline;">📞 050-2077723 (מאור)</a> |
+        </p>
+
+        <p>
+            <a href="https://wa.me/972502077723?text=שלום%20מאור,%20ראיתי%20את%20האתר%20שלך%20ואני%20מעוניין%20בשירותיך"
+                target="_blank" style="color: #25D366; font-weight: bold; text-decoration: none;">
+                📱 שלח הודעה בוואטסאפ למאור
+            </a>
+        </p>
+
+        <p style="font-size: 0.9em; color: #ccc;">
+            אין להעתיק, להשתמש או להפיץ את הקוד או העיצוב ללא אישור בכתב
+        </p>
+        <p>כל הזכויות שמורות © 2025<a href="tel:0558836835" style="color: white; text-decoration: underline;">📞 055-8836835 (אושר – בניית אתרים בקוד)</a></p>
+    </footer>
+
+
+
+</body>
+
+</html>
