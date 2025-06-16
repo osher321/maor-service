@@ -83,6 +83,13 @@
   background-color: black !important;
   color: rgb(17, 17, 2) !important;
 }
+/* מצב ניגודיות גבוהה */
+.high-contrast details[open] p,
+.high-contrast details[open] {
+  color: white !important;
+  background-color: #222 !important;
+}
+
 
 
 /* רקע בהיר עם טקסט כהה */
