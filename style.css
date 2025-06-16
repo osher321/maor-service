@@ -14,15 +14,6 @@ body {
   margin-left: 1em; /* ריווח בין הלוגו להמבורגר */
 }
 
-/*צבע הנייד בכותרת יהיה לבן*/
-a[href^="tel"] {
-  color: white;
-  text-decoration: none;
-}
-
-
-
-
 /* עיצוב סרגל ניווט */
 .navbar {
   position: sticky;
