@@ -389,4 +389,32 @@ footer {
   font-size: 1.2em;
   margin-right: 0.5em;
 }
+/* כפתור חזרה לעמוד הבית */
+
+.home-button {
+  display: inline-block;
+  background-color: #012a4a;
+  color: #ffffff;
+  padding: 0.8em 1.5em;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: 2px solid #ffffff;
+  border-radius: 2em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, outline 0.3s;
+
+  /* מרכז את הכפתור */
+  margin: 2em auto 1em;
+  display: block;
+  text-align: center;
+}
+
+.home-button:hover,
+.home-button:focus {
+  background-color: #014f86;
+  color: #ffff00;
+  outline: 3px solid #ffff00;
+  outline-offset: 4px;
+}
 
