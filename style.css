@@ -1,0 +1,425 @@
+/* עיצוב בסיסי לגוף הדף */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f2f4f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+  line-height: 1.6;
+}
+
+.logo-navbar {
+  height: 5em; /* אפשר להגדיל או להקטין לפי הצורך */
+  margin-left: 1em; /* ריווח בין הלוגו להמבורגר */
+}
+
+
+
+
+
+/* עיצוב סרגל ניווט */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #012a4a;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 1em;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/*תפריט המבורגר*/
+/* סגנון ראשוני */
+.navbar {
+  background: #012a4a;
+  color: white;
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5em;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* כפתור המבורגר */
+.hamburger {
+  display: none;
+  font-size: 2em;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* תפריט למסכים קטנים */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%; /* תופס חצי מסך */
+    height: 50%;
+    background-color: #01497c;
+    text-align: right;
+    padding: 3em 1.5em;
+    z-index: 9999;
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+  }
+
+  .nav-links.show {
+    display: flex;
+    transform: translateX(0); /* נכנס מהצד הימני */
+  }
+
+  .nav-links a {
+    color: white;
+    padding: 1em 0;
+    font-size: 1.2em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+
+
+  .navbar {
+    position: relative;
+    z-index: 10001;
+  }
+}
+
+
+/* אזור הכותרת העליונה של הדף */
+header {
+  background: linear-gradient(to right, #012a4a, #01497c, #2a6f97); /* רקע בגוונים של כחול יוקרתי */
+  color: white;                      /* טקסט לבן */
+  text-align: center;                /* ממרכז את הטקסט והלוגו */
+  padding: 1em 1em 1.5em;            /* ריווח פנימי: פחות למעלה, קצת יותר למטה */
+  margin: 0;                         /* ביטול מרווחים חיצוניים מיותרים */
+}
+
+
+/* הלוגו שמופיע בכותרת */
+header img {
+  max-width: 5em;                    /* גודל מקסימלי של הלוגו */
+  height: auto;                      /* שמירה על פרופורציות נכונות */
+  margin-top: 0.5em;                 /* ריווח קטן מעל הלוגו */
+  margin-bottom: 0.5em;              /* ריווח קטן מתחת ללוגו */
+  display: block;                    /* מבטיח שהמרווחים יעבדו כראוי */
+  margin-left: auto;                /* ממרכז את הלוגו */
+  margin-right: auto;
+}
+
+
+/* כותרת ראשית מתחת ללוגו */
+header h1 {
+  font-family: 'Frank Ruhl Libre', serif; /* פונט רשמי ויפה */
+  font-size: 2em;                  /* גודל טקסט בינוני – אפשר להגדיל אם קטן מדי */
+  margin: 0.1em 0;                 /* ריווח קטן מעל ומתחת לכותרת */
+  line-height: 1.4;                /* גובה שורה נעים לעין */
+}
+
+/* במסכים רחבים יותר – נגדיל את הכותרת */
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 2.8em; /* גודל גדול ומרשים יותר בדסקטופ */
+  }
+}
+
+
+/* כפתור וואטסאפ */
+.whatsapp-btn {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 1em 2em;
+  font-size: 1.2em;
+  border-radius: 2em;
+  text-decoration: none;
+  margin-top: 1em;
+  transition: background-color 0.3s;
+
+}
+
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5b;
+}
+
+/* קופסאות תוכן עם עיצוב יוקרתי */
+.services {
+  background-color: white; /* רקע לבן נקי בתוך הקופסה */
+  border-radius: 1.5em; /* פינות מעוגלות בקוטר 1.5em */
+  padding: 2.5em; /* ריווח פנימי בתוך הקופסה מכל הצדדים */
+  margin: 2.5em auto; /* ריווח חיצוני מסביב + מיקום אוטומטי במרכז */
+  max-width: 900px; /* רוחב מקסימלי של הקופסה – לא תתפרס מעבר לזה */
+  
+  /* הצללה כפולה:
+     - חיצונית (כהה ורכה)
+     - פנימית (inset) כדי לתת עומק עדין */
+  box-shadow: 
+    0 0.8em 1.8em rgba(0, 42, 85, 0.15), 
+    inset 0 0 0.3em rgba(0, 73, 124, 0.1);
+
+  border: 1px solid rgba(1, 41, 78, 0.08); /* מסגרת כחולה שקופה ועדינה */
+  transition: transform 0.3s, box-shadow 0.3s; /* אנימציה חלקה לריחוף */
+}
+
+/* אפקט ריחוף של הקופסה כשעוברים עליה עם העכבר */
+.services:hover {
+  transform: translateY(-0.3em); /* הרמה קלה כלפי מעלה */
+  box-shadow: 0 1em 2em rgba(0, 42, 85, 0.25); /* הצללה עמוקה יותר */
+}
+
+/* עיצוב כותרת ראשית בתוך הקופסה */
+.services h2 {
+  color: #012a4a; /* כחול כהה */
+  margin-bottom: 1em; /* רווח מתחת לכותרת */
+  border-bottom: 2px solid #2a6f97; /* קו תחתון כחול דק */
+  padding-bottom: 0.5em; /* ריווח בין הטקסט לקו */
+  font-size: 2em; /* גודל טקסט גדול יותר */
+}
+
+/* כותרת משנה (למשל: מיזוג או אינסטלציה) */
+.services h4 {
+  color: #01497c; /* כחול בוהק */
+  margin-top: 1.5em; /* רווח מעל הכותרת */
+  font-size: 1.2em;
+}
+
+/* סמל ירוק (✔) לפני כל פריט ברשימה */
+.services ul li::before {
+  content: '✔'; /* סמל ה־וי */
+  color: #799f0c; /* ירוק זית בוהק */
+  margin-left: 0.5em; /* מרחק מהטקסט */
+  font-weight: bold;
+}
+
+/* עיצוב טקסט של פריטים ברשימה */
+.services ul li {
+  margin-bottom: 0.6em; /* ריווח בין השורות */
+  color: #2f2f2f; /* אפור כהה – קריא ונעים */
+  font-size: 1.05em; /* קצת גדול יותר מברירת מחדל */
+}
+
+.box-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2em; /* רווח בין התמונה לטקסט */
+  flex-wrap: wrap; /* רספונסיבי – עובר לשני טורים במסך קטן */
+}
+
+.box-content .text {
+  flex: 2; /* תופס את רוב המקום */
+}
+
+.box-content .image {
+  flex: 1; /* תופס פחות מקום */
+}
+
+.box-content .image img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 1em;
+}
+
+
+
+
+/* גלריה */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5em;
+  max-width: 900px;
+  margin: 2em auto;
+}
+
+.image-gallery img {
+  width: 100%;
+  border-radius: 1em;
+  box-shadow: 0 0.3em 0.8em rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.03);
+}
+
+/* טאבים */
+.tabs {
+  background: white;
+  border-radius: 1em;
+  padding: 2em;
+  margin: 2em auto;
+  max-width: 900px;
+  box-shadow: 0 0.5em 1em rgba(0,0,0,0.1);
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1em;
+}
+
+.tab-buttons button {
+  padding: 0.8em 1.5em;
+  border: none;
+  background-color: #01497c;
+  color: white;
+  border-radius: 2em;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tab-buttons button:hover {
+  background-color: #2a6f97;
+}
+
+.tab-content .tab {
+  display: none;
+}
+
+.tab-content .tab.active {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(1em); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* פוטר */
+footer {
+  background: linear-gradient(to right, #012a4a, #01497c, #2a6f97);
+  color: white;
+  text-align: center;
+  padding: 1.5em;
+  font-size: 0.9em;
+  margin-top: 3em;
+}
+
+/* עיצוב פרק שאלות ותשובות */
+.tab details {
+  background-color: #f9fbfc;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+  padding: 1em;
+  margin-bottom: 1em;
+  transition: background-color 0.3s;
+}
+
+.tab details:hover {
+  background-color: #f0f4f8;
+}
+
+.tab summary {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #01497c;
+}
+
+.tab p {
+  margin-top: 0.5em;
+  color: #333;
+}
+
+
+/* עיצוב המלצות */
+
+.testimonial {
+  background-color: #f2f4f7;
+  border: 1px solid #d0d7de;
+  border-radius: 1em;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  box-shadow: 0 0.3em 0.8em rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.testimonial:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0.5em 1.2em rgba(0, 0, 0, 0.1);
+}
+
+.testimonial .name {
+  font-weight: bold;
+  color: #01497c;
+  margin-bottom: 0.5em;
+}
+
+.testimonial .feedback {
+  font-size: 1em;
+  color: #333;
+}
+.stars {
+  color: gold;
+  font-size: 1.2em;
+  margin-right: 0.5em;
+}
+
+/* כפתור חזרה לעמוד הבית */
+
+.home-button {
+  display: inline-block;
+  background-color: #012a4a;
+  color: #ffffff;
+  padding: 0.8em 1.5em;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: 2px solid #ffffff;
+  border-radius: 2em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, outline 0.3s;
+
+  /* מרכז את הכפתור */
+  margin: 2em auto 1em;
+  display: block;
+  text-align: center;
+}
+
+.home-button:hover,
+.home-button:focus {
+  background-color: #014f86;
+  color: #ffff00;
+  outline: 3px solid #ffff00;
+  outline-offset: 4px;
+}
+

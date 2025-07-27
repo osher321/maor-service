@@ -1,0 +1,219 @@
+/* מיקום מיכל תפריט הנגישות - בצד ימין, מתחת לניווט העליון */
+#accessibility-menu {
+  position: fixed;
+  /* מקבע את המיקום ביחס לחלון הדפדפן */
+  top: 10em;
+  /* גובה מהחלק העליון – אפשר לשנות לפי גובה הנב-בר */
+  right: 20px;
+  /* מרחק מהקצה הימני של המסך */
+  z-index: 9999;
+  /* כדי שיישב מעל כל אלמנט אחר */
+}
+
+/* עיצוב כפתור הנגישות (אייקון כיסא גלגלים) */
+#accessibility-btn {
+  position: fixed;
+  /* חובה כדי לקבע למיקום מסך */
+  top: 25em;
+  /* מתחת לניווט (10em ≈ 160px) */
+  right: 20px;
+  /* בצד ימין */
+  z-index: 10000;
+  /* מעל שאר האלמנטים */
+  background: #161258;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+/* קופסה של תפריט ההגדרות */
+#accessibility-panel {
+  margin-top: 10px;
+  /* רווח מעל הכפתור */
+  background: #fff;
+  /* רקע לבן */
+  border: 1px solid #aaa;
+  /* מסגרת אפורה */
+  border-radius: 8px;
+  /* פינות מעוגלות */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  /* צל עדין */
+  padding: 10px;
+  /* ריווח פנימי */
+  width: 220px;
+  /* רוחב קבוע של התפריט */
+  display: none;
+  /* מוסתר כברירת מחדל */
+}
+
+/* הצגת התפריט כשהכיתה 'visible' מתווספת */
+#accessibility-panel.visible {
+  display: block;
+}
+
+/* עיצוב הרשימה שבתוך התפריט */
+#accessibility-panel ul {
+  list-style: none;
+  /* הסרת עיגולים */
+  padding: 0;
+  margin: 0;
+}
+
+/* עיצוב כל שורה בתפריט */
+#accessibility-panel li {
+  padding: 8px 10px;
+  /* ריווח פנימי */
+  cursor: pointer;
+  /* סמן עכבר ליד */
+  border-bottom: 1px solid #eee;
+  /* קו מפריד דק */
+}
+
+/* שינוי רקע כשהעכבר עומד על שורה */
+#accessibility-panel li:hover {
+  background-color: #f0f0f0;
+}
+
+
+/* מצב ניגודיות גבוהה */
+.high-contrast {
+  background-color: black !important;
+  color: rgb(17, 17, 2) !important;
+}
+
+
+/* רקע בהיר עם טקסט כהה */
+.light-bg {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+/* פונט מודגש וקריא יותר */
+.readable-font {
+  font-family: 'Arial Black', sans-serif !important;
+}
+
+/* הדגשת קישורים בצבע אדום וקו תחתי */
+.highlight-links a {
+  color: red !important;
+  text-decoration: underline !important;
+}
+
+/* התאמה למסכים קטנים – רספונסיביות */
+@media (max-width: 600px) {
+  #accessibility-panel {
+    width: 100%;
+    /* התפריט יתפוס את כל רוחב המסך */
+    right: 0;
+    /* מיושר לימין המסך */
+  }
+}
+
+/* ניגודיות גבוהה – החלה גם על כרטיסיות */
+.high-contrast .tab,
+.high-contrast .tab-content,
+.high-contrast .testimonial,
+.high-contrast details,
+.high-contrast summary,
+.high-contrast ul,
+.high-contrast li {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-color: #fff !important;
+  
+}
+
+.high-contrast summary {
+  cursor: pointer;
+}
+
+.high-contrast .tab a,
+.high-contrast .tab-content a {
+  color: #00ffff !important;
+  text-decoration: underline !important;
+}
+
+.high-contrast button {
+  background-color: #111 !important;
+  color: #fff !important;
+  border: 1px solid #fff !important;
+}
+
+.high-contrast .testimonial .stars {
+  color: #ff0 !important;
+}
+
+.high-contrast details {
+  border: 1px solid #fff !important;
+  padding: 10px;
+  margin-bottom: 1em;
+}
+
+.high-contrast summary {
+  font-weight: bold;
+}
+
+/* לקוחות ממליצים*/
+.high-contrast .testimonial,
+.high-contrast .testimonial p,
+.high-contrast .testimonial .name,
+.high-contrast .testimonial .feedback {
+  color: #fff !important;
+  background-color: #000000 !important;
+}
+
+.high-contrast .testimonial .stars {
+  color: #ff0 !important;
+}
+
+.high-contrast .testimonial .name {
+  font-weight: bold;
+  color: #00ffff !important;
+}
+
+/* אודות*/
+.high-contrast #tab1,
+.high-contrast #tab1 p,
+.high-contrast #tab1 strong {
+  background-color: #000 !important;
+  color: #fff !important;
+ 
+}
+
+.high-contrast #tab1 a {
+  color: #00ffff !important;
+  text-decoration: underline !important;
+}
+
+/*פוקוס מסגרת תכלת נגישות*/
+#accessibility-btn:focus {
+  outline: 3px solid #00ffff;  /* קו תכלת */
+  outline-offset: 4px;
+}
+
+#accessibility-btn {
+  position: fixed;
+  top: 25em;
+  right: 20px;
+  z-index: 99999999; /* הכי גבוה שאפשר */
+  background-color: #161258;
+  color: white;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* מצב ניגודיות גבוהה */
+.high-contrast details[open] p,
+.high-contrast details[open] {
+  color: white !important;
+  background-color: #222 !important;
+}
+
+
