@@ -1,346 +1,366 @@
-<!doctype html>
-<html lang="he" dir="rtl">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>נ.א אפגרייד – שיפוצים חכמים לבית ולעסק | הצעת מחיר מהירה</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>מ.כ שירותי אינסטלציה ומיזוג אוויר</title>
     <meta name="description"
-        content="נ.א אפגרייד: שיפוץ דירות, מטבחים וחדרי רחצה, צבע, גבס, ריצוף ושדרוגים חכמים לבית. אמינות, איכות ושירות אישי. קבלו הצעת מחיר מהירה." />
-    <meta name="theme-color" content="#0e0f12" />
+        content="מ.כ שירותי אינסטלציה ומיזוג אוויר – תיקון נזילות, התקנת מזגנים, שירות מקצועי ואמין באזור המרכז והשפלה.">
 
-    <!-- ✅ Open Graph (Facebook, WhatsApp, Telegram) -->
-    <meta property="og:title" content="נ.א אפגרייד – שיפוצים חכמים לבית ולעסק" />
-    <meta property="og:description" content="אמינות. איכות. שקט נפשי. קבלו הצעת מחיר מהירה." />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="he_IL" />
-    <meta property="og:url" content="https://ornate-chaja-7f6834.netlify.app/" />
-    <meta property="og:image" content="https://ornate-chaja-7f6834.netlify.app/assets/logo-na-upgrade-og.jpg" />
-    <meta property="og:image:alt" content="נ.א אפגרייד – שיפוצים חכמים לבית ולעסק" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://osher321.github.io/maor-service/">
+    <meta property="og:title" content="מאור – שירותי אינסטלציה ומיזוג אוויר 24/7">
+    <meta property="og:description"
+        content="פתרונות אינסטלציה ומיזוג אוויר עד הבית, הגעה מהירה, אחריות מלאה ושקיפות במחיר.">
+    <meta property="og:image" content="https://osher321.github.io/maor-service/img/logo-mak.webp">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="he_IL">
+    <meta property="og:site_name" content="מ.כ אינסטלציה ומיזוג">
 
-    <!-- ✅ Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="נ.א אפגרייד – שיפוצים חכמים לבית ולעסק" />
-    <meta name="twitter:description" content="אמינות. איכות. שקט נפשי. קבלו הצעת מחיר מהירה." />
-    <meta name="twitter:image" content="https://ornate-chaja-7f6834.netlify.app/assets/logo-na-upgrade-og.jpg" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="מאור – שירותי אינסטלציה ומיזוג אוויר 24/7">
+    <meta name="twitter:description"
+        content="פתרונות אינסטלציה ומיזוג אוויר עד הבית, הגעה מהירה, אחריות מלאה ושקיפות במחיר.">
+    <meta name="twitter:image" content="https://osher321.github.io/maor-service/img/logo-mak.webp">
 
-    <!-- ✅ Canonical -->
-    <link rel="canonical" href="https://example.com/" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="נגישות.css">
 
-    <!-- ✅ CSS -->
-    <link rel="preload" href="styles.css" as="style" />
-    <link rel="stylesheet" href="styles.css" />
+    <!-- JS -->
+    <script src="script.js" defer></script>
+    <script src="נגישות.js" defer></script>
 
-    <!-- ✅ JSON-LD: Local Business -->
+    <!-- Google Fonts – שיפור ביצועים -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@700&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Schema.org -->
     <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "נ.א אפגרייד",
-    "image": "https://example.com/assets/logo-na-upgrade-og.jpg",
-    "description": "שיפוצים חכמים לבית ולעסק: דירות, מטבחים, חדרי רחצה, צבע וגבס, ריצוף ושדרוגים חכמים.",
-    "areaServed": ["חולון","בת ים","תל אביב-יפו","ראשון לציון","גוש דן"],
-    "url": "https://example.com/",
-    "telephone": "+972-50-282-3312",
+    "name": "מ.כ שירותי אינסטלציה ומיזוג אוויר",
+    "image": "https://osher321.github.io/maor-service/img/logo-mak.webp",
+    "telephone": "+972-50-2077723",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "בית לחם 18",
       "addressLocality": "חולון",
       "addressCountry": "IL"
     },
-    "openingHours": "Su-Th 08:00-20:00",
-    "priceRange": "₪₪₪",
-    "foundingDate": "2004-06-14"
+    "areaServed": "מרכז ושפלה",
+    "url": "https://osher321.github.io/maor-service/"
   }
   </script>
 </head>
 
 
 <body>
-    <a class="skip-link" href="#main">דלג לתוכן הראשי</a>
 
-    <header class="site-header" role="banner">
-        <div class="container header-inner">
-            <a class="brand" href="#hero" aria-label="נ.א אפגרייד דף הבית">
-                <img class="brand-logo" src="logo-na-upgrade.svg" alt="נ.א אפגרייד – לוגו" width="160" height="48" />
-            </a>
+    <!--הוספת נגישות-->
+    <script src="https://cdn.enable.co.il/licenses/enable-L467690wz9rkl2fx-0825-72827/init.js"></script>
+    <!--<button id="accessibility-btn" aria-label="Toggle Accessibility Menu">♿</button>-->
 
+    <!-- אזור תפריט הנגישות -->
+    <section id="accessibility-menu" aria-label="כלי נגישות" dir="rtl">
+        <div id="accessibility-panel" class="hidden" role="region">
+            <ul>
+                <li><button onclick="adjustTextSize('increase')">הגדל טקסט</button></li>
+                <li><button onclick="adjustTextSize('decrease')">הקטן טקסט</button></li>
+                <li><button onclick="toggleHighContrast()">ניגודיות גבוהה</button></li>
+                <li><button onclick="highlightLinks()">הדגש קישורים</button></li>
+                <li><button onclick="toggleReadableFont()">גופן קריא</button></li>
+                <li><button onclick="resetAccessibility()">איפוס כל ההגדרות</button></li>
+                <li><a href="נגישות.html" aria-label="הצהרצ נגישות">הצהרת נגישות</a>
+                </li>
+            </ul>
 
-            <!-- נווט ראשי -->
-            <nav class="site-nav" aria-label="ניווט ראשי">
-                <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="primaryMenu"
-                    aria-label="פתיחת תפריט">
-                    <span class="hamburger" aria-hidden="true"></span>
-                </button>
-
-                <ul id="primaryMenu" class="menu" role="menubar">
-                    <li role="none"><a role="menuitem" href="#about">אודות</a></li>
-                    <li role="none"><a role="menuitem" href="#services">שירותים</a></li>
-                    <li role="none"><a role="menuitem" href="#gallery">גלריה</a></li>
-                    <li role="none"><a role="menuitem" href="#testimonials">המלצות</a></li>
-                    <li role="none"><a role="menuitem" href="#contact" class="cta-link">צור קשר</a></li>
-                </ul>
-            </nav>
         </div>
+    </section>
+
+
+    <nav class="navbar">
+        <div class="nav-container">
+
+            <!-- לוגו -->
+            <img src="logo-mak.webp" alt=" לוגו מ כ" class="logo-navbar">
+
+
+            <!-- קישורים -->
+            <div class="nav-links" id="navLinks">
+                <a href="#why">למה לבחור בנו</a>
+                <a href="#services">השירותים שלנו</a>
+                <a href="#gallery">גלריה</a>
+                <a href="#more">מידע נוסף</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- כותרת עליונה עם לוגו -->
+    <header>
+        <h1>מ.כ- שרותי אינסטלציה ומיזוג</h1>
+        <a class="whatsapp-btn"
+            href="https://wa.me/972502077723?text=שלום%20מאור,%20ראיתי%20את%20האתר%20שלך%20ואני%20מעוניין%20בשירותיך"
+            target="_blank">
+            דברו איתי בוואטסאפ
+        </a>
+
     </header>
 
-    <main id="main" tabindex="-1">
-        <!-- HERO -->
-        <section id="hero" class="hero section observe" aria-label="אזור פתיחה">
-            <div class="container hero-grid">
-                <div class="hero-copy">
-                    <h1>משפצים חכם — עם <span class="brand-emph">נ.א אפגרייד</span></h1>
-                    <p class="lead">
-                        דירות, מטבחים וחדרי רחצה ברמת גימור גבוהה, עם תכנון מדויק, לוחות זמנים ברורים ושקט נפשי.
-                    </p>
-
-                    <!-- שורת כפתורים בלבד -->
-                    <div class="hero-cta">
-                        <a class="btn btn-primary" href="#contact">קבלו הצעת מחיר עכשיו</a>
-                        <a class="btn btn-ghost"
-                            href="https://wa.me/972502823312?text=שלום%20נ.א%20אפגרייד,%20אשמח%20להצעת%20מחיר&utm_source=site&utm_medium=cta&utm_campaign=hero"
-                            target="_blank" rel="noopener">ווטסאפ מיידי</a>
-                        <a class="btn btn-ghost" href="tel:+972502823312">📞 050-282-3312</a>
-                    </div>
-
-                    <!-- מידע משני בנפרד -->
-                    <ul class="hero-meta">
-                        <li>אזור שירות: המרכז, השרון והשפלה</li>
-                        <li>שעות פעילות: א׳–ה׳ 08:00–20:00</li>
-                    </ul>
-                </div>
-
-                <!-- תמונת הירו (מוגבלת גודל + LCP) -->
-                <div class="hero-media">
-                    <img src="assets/10.webp"
-                        alt="קבלן וצוות עובדים באתר בנייה מודרני בישראל במהלך עבודת שיפוץ ובנייה של בניין חדש, עם פיגומים ומנוף ברקע"
-                        width="1600" height="1000" fetchpriority="high" decoding="async" />
-                </div>
-            </div>
-        </section>
-
-        <!-- ABOUT -->
-        <section id="about" class="section observe">
-            <div class="container two-col">
-                <div>
-                    <h2>למה נ.א אפגרייד?</h2>
-                    <p>
-                        אנחנו מביאים את הסטנדרט של 2025 לשטח: תכנון מדויק, ניהול קבלני-משנה, בקרת איכות בכל שלב,
-                        ושקיפות מלאה מול הלקוח. המטרה: תוצאה מושלמת — בזמן ובתקציב.
-                    </p>
-                    <ul class="ticks">
-                        <li>ניהול פרויקט קצה-לקצה</li>
-                        <li>חומרים איכותיים בלבד</li>
-                        <li>התאמה אישית מלאה לצרכי הלקוח</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- SERVICES -->
-        <section id="services" class="section observe" aria-label="שירותים">
-            <div class="container">
-                <h2>מה אנחנו עושים</h2>
-                <div class="cards">
-
-                    <!-- שיפוץ דירות -->
-                    <article class="card" tabindex="0" aria-label="שיפוץ דירות">
-                        <div class="icon-wrapper">
-                            <!-- בית -->
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path fill="currentColor" d="M12 3l9 8h-3v9h-4v-6H10v6H6v-9H3l9-8z" />
-                            </svg>
-                        </div>
-                        <h3>שיפוץ דירות</h3>
-                        <p>תכנון מלא, פירוק-בנייה, חשמל, אינסטלציה וגימור ללא פשרות.</p>
-                    </article>
-
-                    <!-- מטבחים וחדרי רחצה -->
-                    <article class="card" tabindex="0" aria-label="מטבחים וחדרי רחצה">
-                        <div class="icon-wrapper">
-                            <!-- מטבח -->
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M3 3h18v4H3V3zm0 6h18v12H3V9zm5 2v8h2v-8H8zm6 0v8h2v-8h-2z" />
-                            </svg>
-                        </div>
-                        <h3>מטבחים וחדרי רחצה</h3>
-                        <p>פתרונות חכמים לשימוש יעיל במרחב, איטום וסטייל נקי.</p>
-                    </article>
-
-                    <!-- צבע וגבס -->
-                    <article class="card" tabindex="0" aria-label="צבע וגבס">
-                        <div class="icon-wrapper">
-                            <!-- מברשת צבע -->
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path fill="currentColor" d="M7 16v5h2v-5h6v5h2v-5h2V3H5v13h2zM7 5h10v11H7V5z" />
-                            </svg>
-                        </div>
-                        <h3>צבע וגבס</h3>
-                        <p>קירות דקורטיביים, תקרות צפות ונישות תאורה.</p>
-                    </article>
-
-                    <!-- ריצוף וחיפוי -->
-                    <article class="card" tabindex="0" aria-label="ריצוף וחיפוי">
-                        <div class="icon-wrapper">
-                            <!-- אריחים -->
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z" />
-                            </svg>
-                        </div>
-                        <h3>ריצוף וחיפוי</h3>
-                        <p>קרמיקה, פרקט, שיש – הנחה מדויקת ותיאום מלא.</p>
-                    </article>
-
-                    <!-- שדרוגים חכמים -->
-                    <article class="card" tabindex="0" aria-label="שדרוגים חכמים לבית">
-                        <div class="icon-wrapper">
-                            <!-- בית חכם -->
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M12 3l9 8h-3v9h-4v-6H10v6H6v-9H3l9-8zm0 6a3 3 0 013 3h-2a1 1 0 00-1-1v2a3 3 0 013 3 3 3 0 01-3 3 3 3 0 01-3-3h2a1 1 0 001 1v-2a3 3 0 01-3-3 3 3 0 013-3z" />
-                            </svg>
-                        </div>
-                        <h3>שדרוגים חכמים</h3>
-                        <p>תאורה חכמה, שליטה מרחוק ואוטומציה ידידותית.</p>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- GALLERY -->
-        <section id="gallery" class="section observe" aria-label="גלריית פרויקטים">
-            <div class="container">
-                <div class="gallery">
-                    <figure>
-                        <img src="assets/9.webp" alt="שיפוץ סלון" loading="lazy" decoding="async" width="1280"
-                            height="720" />
-                        <figcaption>סלון – מתכנון לביצוע</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="assets/2.webp" alt="מטבח" loading="lazy" decoding="async" width="1280" height="720" />
-                        <figcaption>מטבח – שדרוג חכם</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="assets/8.webp" alt="חדר רחצה" loading="lazy" decoding="async" width="1280"
-                            height="720" />
-                        <figcaption>חדר רחצה – איטום וגימור</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
-
-        <!-- TESTIMONIALS -->
-        <section id="testimonials" class="section observe" aria-label="המלצות לקוחות">
-            <div class="container">
-                <h2>לקוחות מספרים</h2>
-                <div class="quotes">
-                    <blockquote class="quote">
-                        <p>“עמדו בזמנים, שמרו על נקיון ואת העבודה עשו מושלם. ממליצה בחום!”</p>
-                        <footer>— רינת, תל אביב ⭐⭐⭐⭐⭐</footer>
-                    </blockquote>
-                    <blockquote class="quote">
-                        <p>“תקשורת פתוחה לאורך כל הפרויקט ותוצאה מצוינת. אפס הפתעות.”</p>
-                        <footer>— עידו, רמת גן ⭐⭐⭐⭐⭐</footer>
-                    </blockquote>
-                    <blockquote class="quote">
-                        <p>“השירות הכי מקצועי שנתקלתי בו. כל פרט בוצע בדיוק מושלם — כאילו זה הבית שלהם.”</p>
-                        <footer>— יעל, חולון ⭐⭐⭐⭐⭐</footer>
-                    </blockquote>
-                    <blockquote class="quote">
-                        <p>“הצוות הגיע כל יום בזמן, השאירו הכל נקי ומסודר. רמת גימור מדהימה.”</p>
-                        <footer>— עומר, ראשון לציון ⭐⭐⭐⭐⭐</footer>
-                    </blockquote>
-                    <blockquote class="quote">
-                        <p>“הם הפכו את הדירה הישנה שלנו לחלום אמיתי. כל מי שנכנס לא מפסיק לשאול מי עשה את השיפוץ.”</p>
-                        <footer>— דנה, בת ים ⭐⭐⭐⭐⭐</footer>
-                    </blockquote>
-                    <blockquote class="quote">
-                        <p>“קיבלתי יחס אישי לאורך כל הדרך. מקצועיות, הגינות ויחסי אנוש נדירים.”</p>
-                        <footer>— נמרוד, תל אביב ⭐⭐⭐⭐⭐</footer>
-                    </blockquote>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACT -->
-        <section id="contact" class="section observe" aria-label="צור קשר">
-            <div class="container contact-grid">
-                <div>
-                    <h2>בואו נתחיל את השיפוץ שלכם</h2>
-                    <p>השאירו פרטים ונחזור אליכם עם ייעוץ ראשוני ללא עלות.</p>
-                    <form id="contactForm" class="form" novalidate>
-                        <label for="name">שם מלא</label>
-                        <input id="name" name="name" type="text" inputmode="text" autocomplete="name" required
-                            aria-required="true" />
-
-                        <label for="phone">טלפון</label>
-                        <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required
-                            aria-required="true" pattern="^0[2-9]\\d{7,8}$" dir="ltr" />
-
-                        <label for="message">מה חשוב לכם?</label>
-                        <textarea id="message" name="message" rows="4"
-                            placeholder="לדוגמה: שיפוץ מטבח והחלפת רצפה"></textarea>
-
-                        <!-- honeypot -->
-                        <input type="text" name="company" tabindex="-1" autocomplete="off" class="hp"
-                            aria-hidden="true" />
-
-                        <button class="btn btn-primary" type="submit">שליחה</button>
-                        <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
-                    </form>
-                </div>
-                <aside class="contact-aside">
-                    <ul class="contact-list">
-                        <li>
-                            <a class="btn btn-ghost" href="tel:+972502823312">📞 התקשרו עכשיו — ‎050-282-3312</a>
-                        </li>
-                        <li>
-                            <a class="btn btn-ghost"
-                                href="https://wa.me/972502823312?text=שלום%20נ.א%20אפגרייד&utm_source=site&utm_medium=cta&utm_campaign=contact"
-                                target="_blank" rel="noopener">🟢 הודעת ווטסאפ</a>
-                        </li>
-                        <li><span>שעות פעילות: א׳–ה׳ 08:00–20:00</span></li>
-                    </ul>
-                </aside>
-            </div>
-        </section>
-
-        <!-- פרטי חברה -->
-        <section class="section company-info" aria-label="פרטי החברה">
-            <div class="container">
-                <h3>פרטי החברה</h3>
-                <ul class="info-list">
-                    <li>שם החברה: נ.א אפגרייד בע"מ</li>
-                    <li>ח.פ.: 513554774</li>
-                    <li>סטטוס: חברה פרטית פעילה</li>
-                    <li>כתובת רשומה: בית לחם 18, חולון</li>
-                    <li>תאריך הקמה: 14 ביוני 2004</li>
+    <!-- תוכן ראשי של הדף -->
+    <section class="services" id="why">
+        <div class="box-content">
+            <div class="text">
+                <h2>למה לבחור בנו?</h2>
+                <ul>
+                    <li>ניסיון של 25 שנים כולל תעודת קבלן רשום</li>
+                    <li>שירות מהיר ואמין</li>
+                    <li>שימוש בכלים מתקדמים לתוצאה מדויקת, מהירה ובטוחה</li>
+                    <li>מחירים הוגנים ואחריות מלאה</li>
+                    <li>זמינות גם במקרי חירום</li>
                 </ul>
             </div>
-        </section>
+            <div class="image">
+                <img src="img3.webp" alt="איש מקצוע עם קאטר ללא רקע." />
+            </div>
+        </div>
+
+    </section>
+    <!-- גלריית תמונות -->
+    <section id="gallery">
+        <di class="image-gallery">
+            <img src="img5.webp" alt=" אדם מחזיק מצלמה מקצועית לצילום ביוב">
+            <img src="img4webp.webp" alt=" אדם מאתר נזילות עם מכשיר מקצועי">
+            </div>
+    </section>
+
+
+    <!-- קופסה: השירותים שלנו -->
+    <section class="services" id="services">
+        <h2>השירותים שלנו</h2>
+
+        <h4>אינסטלציה:</h4>
+        <ul>
+            <li>תיקון נזילות</li>
+            <li>החלפת צנרת</li>
+            <li>פתיחת סתימות</li>
+            <li> תיקון אל הרס</li>
+            <li>איתור נזילות</li>
+        </ul>
+        <h4>מיזוג אוויר:</h4>
+        <ul>
+            <li>התקנת מזגנים מכל הסוגים</li>
+            <li>תיקון תקלות</li>
+            <li>מילוי גז וניקוי פילטרים</li>
+        </ul>
+    </section>
+
+    <!-- גלריית תמונות -->
+    <section class="image-gallery">
+        <img src="img2.webp" alt=" אדם מתקן נזילה בכיור">
+        <img src="img1.webp" alt="אדם התקין מזגן">
+
+    </section>
+
+    <!-- טאבים נוספים -->
+    <section class="tabs" id="more">
+        <h3>מידע נוסף</h3>
+        <div class="tab-buttons">
+            <button onclick="showTab('tab1')">אודות</button>
+            <button onclick="showTab('tab2')">לקוחות ממליצים</button>
+            <button onclick="showTab('tab3')">שאלות נפוצות</button>
+        </div>
+        <div class="tab-content">
+            <div id="tab1" class="tab active">
+                <img src="img3.webp" alt="איש מקצוע עם קאטר ללא רקע"
+                    style="width: 60px; height: auto; margin-bottom: 1em;">
+                <p><strong>מ.כ – אינסטלציה ומיזוג</strong> לא עוד טכנאי, אלא שותף לראש שקט בבית שלכם.</p>
+                <p>עם ניסיון של למעלה מ־25 שנה, דרג 3, חשמלאי ראשי, עוסק בכל סוגי המיזוג- פרטי, מסחרי ותעשייתי, מאות
+                    לקוחות מרוצים והסמכה כקבלן רשום – אנחנו מביאים איתנו לא רק ידע,
+                    אלא גם יחס אנושי, שקיפות מלאה והבנה אמיתית של הצרכים שלכם.</p>
+                <p>כל קריאה מתקבלת אצלנו ברצינות. אנחנו מגיעים בזמן, מסבירים כל שלב בעבודה, ולא עוזבים עד שאתם
+                    מרוצים ב־100%.</p>
+                <p>הלקוחות שלנו מספרים שהם בוחרים בנו שוב ושוב – לא רק בזכות המקצועיות, אלא בזכות האמינות, ההוגנות
+                    והלב שאנחנו מביאים לכל תיקון והתקנה.</p>
+                <p><strong>אם אתם מחפשים איש מקצוע שאפשר לסמוך עליו – תנו לנו להוכיח לכם למה מ.כ הם הבחירה
+                        הנכונה.</strong></p>
+            </div>
+
+            <div id="tab2" class="tab">
+                <div class="testimonial">
+                    <p class="name">אושר מחולון</p>
+                    <p class="feedback">מאור איש מקצוע אמין ובעל ידי זהב – מצליח לפתור כל תקלה!</p>
+                    <span class="stars">★★★★★</span>
+                </div>
+                <div class="testimonial">
+                    <p class="name">אליקו מחולון</p>
+                    <p class="feedback">אלוף אמיתי! פתר לי בעיה שאף אחד אחר לא הצליח. ממליץ מאוד!</p>
+                    <span class="stars">★★★★★</span>
+                </div>
+                <div class="testimonial">
+                    <p class="name">יפה מחולון</p>
+                    <p class="feedback">שירות עם חיוך, דייקנות וניקיון. אין דברים כאלה!</p>
+                    <span class="stars">★★★★★</span>
+                </div>
+                <div class="testimonial">
+                    <p class="name">דוד מראשון לציון</p>
+                    <p class="feedback">הגיע בזמן, פתר הכל במהירות – מקצוען אמיתי!</p>
+                    <span class="stars">★★★★★</span>
+                </div>
+
+                <!-- המלצות חדשות -->
+                <div class="testimonial">
+                    <p class="name">נטע מתל אביב</p>
+                    <p class="feedback">מאור עשה עבודה מושלמת! ממליצה בלב שלם.</p>
+                    <span class="stars">★★★★★</span>
+                </div>
+                <div class="testimonial">
+                    <p class="name">אביאל מיבנה</p>
+                    <p class="feedback">בחור זהב, שירות אדיב ומקצועי – כל הכבוד לו!</p>
+                    <span class="stars">★★★★★</span>
+                </div>
+                <div class="testimonial">
+                    <p class="name">רינה מרחובות</p>
+                    <p class="feedback">פתר את הבעיה ביעילות ובמהירות. אני מרוצה מאוד!</p>
+                    <span class="stars">★★★★★</span>
+                </div>
+                <div class="testimonial">
+                    <p class="name">שלומי מבת ים</p>
+                    <p class="feedback">תותח אמיתי, יודע את העבודה ועושה אותה מכל הלב!</p>
+                    <span class="stars">★★★★★</span>
+                </div>
+                <div class="testimonial">
+                    <p class="name">תמר מפתח תקווה</p>
+                    <p class="feedback">שירות יוצא דופן – לא פגשתי כזה בעל מקצוע הרבה זמן!</p>
+                    <span class="stars">★★★★★</span>
+                </div>
+            </div>
+
+
+            <div id="tab3" class="tab">
+
+                <h4>שאלות כלליות</h4>
+
+                <details>
+                    <summary><strong>האם יש אחריות?</strong></summary>
+                    <p>כן, אחריות מלאה על כל עבודה.</p>
+                </details>
+
+                <details>
+                    <summary><strong>כמה זמן לוקח התיקון?</strong></summary>
+                    <p>בד"כ באותו יום.</p>
+                </details>
+
+                <details>
+                    <summary><strong>האם אתם נותנים שירות גם לעסקים ומשרדים?</strong></summary>
+                    <p>כן, אנו מספקים שירות מקצועי גם ללקוחות עסקיים – כולל משרדים, חנויות, מסעדות ועוד.</p>
+                </details>
+
+                <details>
+                    <summary><strong>תוך כמה זמן אתם יכולים להגיע מרגע הקריאה?</strong></summary>
+                    <p>בדרך כלל נוכל להגיע תוך כמה שעות מרגע הפנייה – תלוי במיקום ובדחיפות התקלה.</p>
+                </details>
+
+                <details>
+                    <summary><strong>האם אפשר לשלם באשראי?</strong></summary>
+                    <p>כן, אנו מקבלים תשלום גם במזומן וגם באשראי או העברה בנקאית.</p>
+                </details>
+
+                <h4 style="margin-top:2em;">שאלות על אינסטלציה</h4>
+
+                <details>
+                    <summary><strong>האם אתם מבצעים פתיחת סתימות דחופה?</strong></summary>
+                    <p>כן, אנו זמינים גם למקרים דחופים של סתימות בכיורים, שירותים, מקלחות ושוחות ביוב.</p>
+                </details>
+
+                <details>
+                    <summary><strong>האם אתם מתקינים נקודות מים חדשות?</strong></summary>
+                    <p>בוודאי. אנו מבצעים פתיחת נקודות מים לפי תכנון הלקוח או לצרכים מיוחדים וכל עבודות האינסטלציה
+                        למינהם</p>
+                </details>
+
+                <details>
+                    <summary><strong>מה עושים במקרה של פיצוץ בצנרת?</strong></summary>
+                    <p>יש לסגור את ברז המים הראשי ולהתקשר אלינו מיד – נגיע במהירות עם פתרון מקצועי ומדויק.</p>
+                </details>
+                <h4 style="margin-top:2em;">שאלות על מיזוג אוויר</h4>
+
+                <details>
+                    <summary><strong>מה חשוב לדעת לפני התקנת מזגן חדש?</strong></summary>
+                    <p>כדאי לבדוק את גודל החדר, הבידוד, סוג החשמל ולוודא שהמזגן מתאים לצרכים שלכם – אנחנו נסייע לכם
+                        בבחירה ובייעוץ.</p>
+                </details>
+
+                <details>
+                    <summary><strong>האם אתם מתקינים גם מזגנים מיני מרכזיים?</strong></summary>
+                    <p>בהחלט. אנו מתקינים כל סוגי המזגנים כולל מיני מרכזי ו-VRF.</p>
+                </details>
+
+            </div>
+        </div>
+    </section>
     </main>
 
-    <footer class="site-footer" role="contentinfo">
-        <div class="container footer-inner">
-            <p>© <span id="year"></span> נ.א אפגרייד – כל הזכויות שמורות.</p>
-            <nav aria-label="קישורים מהירים">
-                <a href="#services">שירותים</a>
-                <a href="#gallery">גלריה</a>
-                <a href="#contact">צור קשר</a>
-            </nav>
-        </div>
+
+    <div class="services">
+        <h3>אזורי שירות</h3>
+        <h3>אנחנו מגיעים לאיזור המרכז והשפלה :</h3>
+        <ul style="columns: 2; max-width: 600px; margin: auto; line-height: 1.8;">
+            <li>חולון</li>
+            <li>בת ים</li>
+            <li>תל אביב</li>
+            <li>יבנה</li>
+            <li>ראשון לציון</li>
+            <li>רחובות</li>
+            <li>רמלה</li>
+            <li>פתח תקווה</li>
+            <li>גבעתיים</li>
+            <li>רמת גן</li>
+            <li>נס ציונה</li>
+            <li>והסביבה</li>
+        </ul>
+        <p>אם אתם לא בטוחים אם אנחנו מגיעים לאיזורכם אל תהססו שלחו הודעה 050-2077723</p>
+
+
+    </div>
+
+    </section>
+
+    <div style="text-align: center; margin: 2em 0;">
+        <a class="whatsapp-btn"
+            href="https://wa.me/972502077723?text=שלום%20מאור,%20ראיתי%20את%20האתר%20שלך%20ואני%20מעוניין%20בשירותיך"
+            target="_blank">
+            דברו איתי בוואטסאפ
+        </a>
+
+    </div>
+
+
+
+    <!-- תחתית הדף -->
+    <footer
+        style="background:#111; color:#fff; text-align:center; padding:1.5em; font-family:'Heebo',sans-serif; font-size:0.95em;">
+        <p style="margin:0;">
+            כל הזכויות שמורות © 2025
+            <a href="https://code.digitalosher.com/" target="_blank" rel="noopener"
+                style="color:#ffd700; text-decoration:none; font-weight:600;">
+                code.digitalosher.com
+            </a>
+        </p>
     </footer>
 
-    <!-- JS -->
-    <script src="script.js" defer></script>
 
-    <!-- נגישות (defer, בסוף ה-body) -->
-    <script defer src="https://cdn.enable.co.il/licenses/enable-L467690wz9rkl2fx-0825-72827/init.js"></script>
+
+
 </body>
 
 </html>
